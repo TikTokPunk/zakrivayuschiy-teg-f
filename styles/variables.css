@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', fantasy;
+  --bg-gradient-horyzon: repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px);
+  --bg-gradient-vertical: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px);
+  --bg-gradient-wave: linear-gradient(to bottom, #e7e7e7  0%, #1a1a1a 100%);
+  --bg-combined: var(--bg-gradient-horyzon), var(--bg-gradient-vertical), var(--bg-gradient-wave);
+  --block-width: clamp(300px, 100%, 800px);
+  --header-height: clamp(200px, 668px, 327px);
+  --title-font-size: clamp(49px, 5vw, 49px);
+  --subtitle-font-size: clamp(14px, 2vw, 14px);
+  --gap-size: clamp(20px, 3vw, 22px);
+  --hover-color: #000;
+  --active-color: #FF0000;
+  --animation-fill-color: #FF0000;
+  --contour-color-heart: #000;
+  --dialog-width: clamp(341px, 80vw, 351px);
+  --dialog-height: 191px;
+  --shadow-color: #000;
+}
