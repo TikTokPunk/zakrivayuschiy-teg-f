@@ -18,4 +18,6 @@
   --dialog-width: clamp(341px, 80vw, 351px);
   --dialog-height: 191px;
   --shadow-color: #000;
+  --text-weight: 410;
+  --text-weight-bold: 715;
 }

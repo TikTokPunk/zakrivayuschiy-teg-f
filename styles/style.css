@@ -40,12 +40,14 @@
 .main-title__header {
   align-self: center;
   font-size: var(--title-font-size);
+  font-weight: var(--font-weight);
 }
 
 .main-subtitle__header {
   align-self: center;
   font-size: var(--subtitle-font-size);
   line-height: 60%;
+  font-weight: var(--font-weight);
 }
 
 .main_content {
@@ -73,6 +75,7 @@
   font-family: var(--main-font);
   padding: 6px 10px 4px;
   max-width: 100%;
+  font-weight: var(--text-weight-bold);
 }
 
 .main_logo {
@@ -111,37 +114,30 @@
   filter: grayscale(100%) contrast(130%);
 }
 
-/* 2. Тёплый сепия с повышенной насыщенностью */
 .image-warm {
   filter: sepia(60%) saturate(180%) brightness(105%);
 }
 
-/* 3. Холодный синий оттенок */
 .image-cold {
   filter: hue-rotate(180deg) brightness(90%) contrast(110%);
 }
 
-/* 4. Высокий контраст и инверсия цветов */
 .image-high-contrast {
   filter: contrast(200%) invert(20%);
 }
 
-/* 5. Размытие с эффектом свечения */
 .image-dreamy {
   filter: blur(2px) brightness(110%) saturate(150%);
 }
 
-/* 6. Тёмный драматичный эффект */
 .image-dark-drama {
   filter: brightness(70%) contrast(150%) saturate(80%);
 }
 
-/* 7. Множественный фильтр - винтажный эффект */
 .image-vintage {
   filter: sepia(50%) hue-rotate(-15deg) contrast(120%) saturate(110%) brightness(95%);
 }
 
-/* 8. Яркий психоделический эффект */
 .image-psychedelic {
   filter: hue-rotate(90deg) saturate(200%) brightness(110%) contrast(120%);
 }
@@ -154,6 +150,7 @@
   font-size: 18px;
   max-width: 100%;
   gap: 25px;
+  font-weight: var(--font-weight);
 }
 
 .main__card-button {
@@ -194,6 +191,7 @@
   position: relative;
   z-index: 2;
   transition: color 0.3s;
+  font-weight: var(--font-weight);
 }
 
 .card__like-button:focus {
@@ -354,6 +352,7 @@
   width: var(--dialog-width);
   gap: 0;
   margin: 0;
+  font-weight: var(--font-weight);
 }
 
 .dialog__text-icon {
