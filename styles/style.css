@@ -88,7 +88,7 @@
   justify-self: end;
   padding-top: 30px;
   padding-right: 25px;
-  -webkit-text-stroke: 1px #fff; 
+  -webkit-text-stroke: 1px #fff;
   opacity: 0.5;
 }
 
@@ -383,6 +383,13 @@
 .button__footer-dialog {
   height: 38px;
   width: 100%;
+}
+
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+  .card__image-label {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+  }
 }
 
 @media (700px <= width <= 2560px) {
