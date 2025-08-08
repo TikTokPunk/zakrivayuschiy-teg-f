@@ -208,6 +208,7 @@
   text-transform: uppercase;
   z-index: 2;
   transition: color 0.3s;
+  font-size: 14px;
 }
 
 .main__card-button {
@@ -232,15 +233,6 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-}
-
-.button__text {
-  font-family: var(--accent-font);
-  font-size: 14px;
-  color: #000;
-  position: relative;
-  z-index: 2;
-  transition: color 0.3s;
 }
 
 .card__like-button:focus {
