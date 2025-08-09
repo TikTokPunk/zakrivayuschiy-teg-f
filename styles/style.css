@@ -1,14 +1,3 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -164,6 +153,7 @@
   transition: color 0.3s 0.3s;
   display: block;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .button::before {
@@ -177,20 +167,15 @@
   transform: scaleX(0);
   transform-origin: left top;
   transition: transform 0.5s ease-in-out;
-  z-index: 1;
+  color: #000;
 }
 
 .button:hover .button__text {
-  color: #fff;
-}
-
-.button:hover .save-icon {
   mix-blend-mode: difference;
 }
 
 .save-icon,
 .dialog-icon {
-  color: inherit;
   fill: currentColor; /*я не понимаю почему это работает, но работает*/
 }
 
@@ -203,12 +188,19 @@
   box-shadow: 2px 2px 0 0 var(--shadow-color);
 }
 
-.button__text {
+.button__text,
+.button__text-confirm,
+.save-icon {
   position: relative;
-  text-transform: uppercase;
   z-index: 2;
   transition: color 0.3s;
   font-size: 14px;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+.button__text-confirm {
+  text-transform: uppercase;
 }
 
 .main__card-button {
@@ -356,16 +348,6 @@
   position: relative;
   z-index: 2;
   transition: color 0.3s;
-  color: #000;
-}
-
-.save-icon,
-.dialog-icon {
-  color: inherit;
-}
-
-.button:hover .save-icon {
-  color: #fff;
 }
 
 .footer-button_text {
